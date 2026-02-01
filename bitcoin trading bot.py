@@ -59,11 +59,12 @@ class bitcoin_bot:
         plt.grid(True, linestyle='--', alpha=0.6)
         plt.show()
 
-# Execution logic
+# execution logic
 bot = bitcoin_bot()
 
 for _ in range(3):
     bot.execute_logic()
     time.sleep(2) 
+
 
 bot.plot_signals()
